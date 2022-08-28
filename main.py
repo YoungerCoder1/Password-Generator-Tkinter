@@ -1,13 +1,13 @@
 from tkinter import *
 import random
 
-ALLLETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#№$%^&*()-_=+/\?~1234567890'
+AL_LLETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#№$%^&*()-_=+/\?~1234567890'
 
 def generate(leng):
     password=''
     for i in range(leng):
-        symbol = random.randint(0, len(ALLLETTERS)-1)
-        password += ALLLETTERS[symbol]
+        symbol = random.randint(0, len(AL_LLETTERS)-1)
+        password += AL_LLETTERS[symbol]
 
     return password
 
